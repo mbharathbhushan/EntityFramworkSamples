@@ -1,0 +1,9 @@
+D:\EntityFramworkSamples\12-TableSplitting\DataStrore\bin\Debug\DataStrore.dacpac
+D:\EntityFramworkSamples\12-TableSplitting\DataStrore\bin\Debug\DataStrore.dll
+D:\EntityFramworkSamples\12-TableSplitting\DataStrore\bin\Debug\DataStrore.pdb
+D:\EntityFramworkSamples\12-TableSplitting\DataStrore\obj\Debug\Model.xml
+D:\EntityFramworkSamples\12-TableSplitting\DataStrore\obj\Debug\refactor.xml
+D:\EntityFramworkSamples\12-TableSplitting\DataStrore\obj\Debug\postdeploy.sql
+D:\EntityFramworkSamples\12-TableSplitting\DataStrore\obj\Debug\predeploy.sql
+D:\EntityFramworkSamples\12-TableSplitting\DataStrore\obj\Debug\DataStrore.dll
+D:\EntityFramworkSamples\12-TableSplitting\DataStrore\obj\Debug\DataStrore.pdb

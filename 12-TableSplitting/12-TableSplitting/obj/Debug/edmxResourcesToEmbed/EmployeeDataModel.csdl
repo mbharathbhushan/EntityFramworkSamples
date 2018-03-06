@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TableSplittingModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+    </Key>
+    <Property Name="EmployeeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Gender" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="EmployeeContactDetail" Relationship="TableSplittingModel.EmployeeEmployeeContactDetail" FromRole="Employee" ToRole="EmployeeContactDetail" />
+  </EntityType>
+  <EntityContainer Name="EmployeeDBContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Employees" EntityType="Self.Employee" />
+    <EntitySet Name="EmployeeContactDetails" EntityType="TableSplittingModel.EmployeeContactDetail" />
+    <AssociationSet Name="EmployeeEmployeeContactDetail" Association="TableSplittingModel.EmployeeEmployeeContactDetail">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="EmployeeContactDetail" EntitySet="EmployeeContactDetails" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="EmployeeContactDetail">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+    </Key>
+    <Property Name="EmployeeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Mobile" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LandLine" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Employee" Relationship="TableSplittingModel.EmployeeEmployeeContactDetail" FromRole="EmployeeContactDetail" ToRole="Employee" />
+  </EntityType>
+  <Association Name="EmployeeEmployeeContactDetail">
+    <End Type="TableSplittingModel.Employee" Role="Employee" Multiplicity="1" />
+    <End Type="TableSplittingModel.EmployeeContactDetail" Role="EmployeeContactDetail" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="EmployeeContactDetail">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

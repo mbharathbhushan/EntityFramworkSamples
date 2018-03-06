@@ -1,20 +1,18 @@
-﻿using CodeFirstSample.Repository;
-using System.Linq;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
-namespace CodeFirstSample.Controllers
+namespace DBFirstApproch.Controllers
 {
     public class HomeController : Controller
     {
-        private EmployeeRepository employeeRepository;
         public ActionResult Index()
         {
-            employeeRepository = new EmployeeRepository();
-            var list = employeeRepository.GetDepartments();
-            var count = list.Count();
-
-            var emp = employeeRepository.GetEmployee(1);
-            var rec = emp;
+            DBFirstApproachDBEntities db = new DBFirstApproachDBEntities();
+          var status =  db.DeleteEmployee(1);
+            var result = "Not Deleted";
+            if(status == 1)
+            {
+                result = "Deleted";
+            }
             return View();
         }
 

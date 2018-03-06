@@ -1,20 +1,20 @@
-﻿using CodeFirstSample.Repository;
+﻿using _13_TableSplitting_CodeFirstApproach.Context;
+using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Web;
 using System.Web.Mvc;
 
-namespace CodeFirstSample.Controllers
+namespace _13_TableSplitting_CodeFirstApproach.Controllers
 {
     public class HomeController : Controller
     {
-        private EmployeeRepository employeeRepository;
         public ActionResult Index()
         {
-            employeeRepository = new EmployeeRepository();
-            var list = employeeRepository.GetDepartments();
-            var count = list.Count();
+            EmployeeDbContext dbContext = new EmployeeDbContext();
 
-            var emp = employeeRepository.GetEmployee(1);
-            var rec = emp;
+            var list = dbContext.Employees.ToList();
+            var count = list.Count;
             return View();
         }
 

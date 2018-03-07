@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "18-TPHInheritenceInEF-DFA", "18-TPHInheritenceInEF-DFA\18-TPHInheritenceInEF-DFA.csproj", "{FCFD0B9F-9835-4BF4-BCD4-FCE4A63ACCAD}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DataStore", "DataStore\DataStore.sqlproj", "{26299B88-BF23-471C-A2A2-38951EEC6B1E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCFD0B9F-9835-4BF4-BCD4-FCE4A63ACCAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCFD0B9F-9835-4BF4-BCD4-FCE4A63ACCAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCFD0B9F-9835-4BF4-BCD4-FCE4A63ACCAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCFD0B9F-9835-4BF4-BCD4-FCE4A63ACCAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26299B88-BF23-471C-A2A2-38951EEC6B1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26299B88-BF23-471C-A2A2-38951EEC6B1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26299B88-BF23-471C-A2A2-38951EEC6B1E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{26299B88-BF23-471C-A2A2-38951EEC6B1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26299B88-BF23-471C-A2A2-38951EEC6B1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26299B88-BF23-471C-A2A2-38951EEC6B1E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -17,7 +17,7 @@ namespace _18_TPHInheritenceInEF_DFA.Controllers
         // GET: PermanentEmployees
         public ActionResult Index()
         {
-            return View(db.Employees.ToList().Cast<PermanentEmployee>());
+            return View(db.Employees.OfType<PermanentEmployee>().ToList());
         }
 
         // GET: PermanentEmployees/Details/5

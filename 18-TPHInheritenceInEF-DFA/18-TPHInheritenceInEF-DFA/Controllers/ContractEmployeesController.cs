@@ -17,7 +17,7 @@ namespace _18_TPHInheritenceInEF_DFA.Controllers
         // GET: ContractEmployees
         public ActionResult Index()
         {
-            var list = db.Employees.ToList().Cast<ContractEmployee>();
+            var list = db.Employees.OfType<ContractEmployee>().ToList();
             return View(list);
         }
 
@@ -28,7 +28,7 @@ namespace _18_TPHInheritenceInEF_DFA.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            ContractEmployee contractEmployee =(ContractEmployee) db.Employees.Find(id);
+            ContractEmployee contractEmployee = (ContractEmployee)db.Employees.Find(id);
             if (contractEmployee == null)
             {
                 return HttpNotFound();
@@ -66,7 +66,7 @@ namespace _18_TPHInheritenceInEF_DFA.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            ContractEmployee contractEmployee =(ContractEmployee) db.Employees.Find(id);
+            ContractEmployee contractEmployee = (ContractEmployee)db.Employees.Find(id);
             if (contractEmployee == null)
             {
                 return HttpNotFound();
@@ -110,7 +110,7 @@ namespace _18_TPHInheritenceInEF_DFA.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            ContractEmployee contractEmployee =(ContractEmployee) db.Employees.Find(id);
+            ContractEmployee contractEmployee = (ContractEmployee)db.Employees.Find(id);
             db.Employees.Remove(contractEmployee);
             db.SaveChanges();
             return RedirectToAction("Index");

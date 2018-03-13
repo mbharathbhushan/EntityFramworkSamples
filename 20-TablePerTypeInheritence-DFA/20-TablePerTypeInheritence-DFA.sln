@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20-TablePerTypeInheritence-DFA", "20-TablePerTypeInheritence-DFA\20-TablePerTypeInheritence-DFA.csproj", "{B1618285-9125-46D9-AADF-3B62500508B0}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DataStore", "DataStore\DataStore.sqlproj", "{96AAB41A-C1B8-48A2-8488-D79B2C3625EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B1618285-9125-46D9-AADF-3B62500508B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1618285-9125-46D9-AADF-3B62500508B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1618285-9125-46D9-AADF-3B62500508B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1618285-9125-46D9-AADF-3B62500508B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96AAB41A-C1B8-48A2-8488-D79B2C3625EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96AAB41A-C1B8-48A2-8488-D79B2C3625EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96AAB41A-C1B8-48A2-8488-D79B2C3625EA}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{96AAB41A-C1B8-48A2-8488-D79B2C3625EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96AAB41A-C1B8-48A2-8488-D79B2C3625EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96AAB41A-C1B8-48A2-8488-D79B2C3625EA}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

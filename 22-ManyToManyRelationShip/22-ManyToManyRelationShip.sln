@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "22-ManyToManyRelationShip", "22-ManyToManyRelationShip\22-ManyToManyRelationShip.csproj", "{0EC36230-C6AA-4C7F-AF54-A2AC8BF3D18F}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DataStore", "DataStore\DataStore.sqlproj", "{CAA0544B-4E4A-4B58-BA21-80589CEF56F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0EC36230-C6AA-4C7F-AF54-A2AC8BF3D18F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EC36230-C6AA-4C7F-AF54-A2AC8BF3D18F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EC36230-C6AA-4C7F-AF54-A2AC8BF3D18F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EC36230-C6AA-4C7F-AF54-A2AC8BF3D18F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAA0544B-4E4A-4B58-BA21-80589CEF56F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAA0544B-4E4A-4B58-BA21-80589CEF56F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAA0544B-4E4A-4B58-BA21-80589CEF56F3}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{CAA0544B-4E4A-4B58-BA21-80589CEF56F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAA0544B-4E4A-4B58-BA21-80589CEF56F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAA0544B-4E4A-4B58-BA21-80589CEF56F3}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
